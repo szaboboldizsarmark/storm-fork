@@ -1,0 +1,2230 @@
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "uca0103", -- Renegade
+    Air = {
+        MaxAirspeed = 8, -- 6
+        MinAirspeed = 4, -- 3
+    },
+    Defense = {
+        Health = 1000, -- 1450
+        MaxHealth = 1000,
+        RegenRate = 3, -- 4
+        Shield = {
+            ShieldMaxHealth = 100, -- 150
+            ShieldRegenRate = 3, -- 6
+        },
+    },
+    Display = {
+        IdleEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        MovementEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            BeamExhaust = {
+                Cruise = false,
+                Idle = false,
+                Landed = false,
+            },
+        },
+        UniformScale = 0.18, -- 0.3
+    },
+    Economy = {
+        BuildTime = 20, -- 27
+        EnergyValue = 300, -- 175
+        MassValue = 60, -- 75
+    },
+    General = {
+        ExperienceValue = 125, -- 225
+    },
+    Intel = {
+        VisionRadius = 30, -- 16
+    },
+    SelectionSizeX = 0.6, -- 1
+    SelectionSizeZ = 0.72, -- 1.2
+    Weapons = {
+        {
+            Damage = 50, -- 22 x3
+            MaxRadius = 30, -- 13
+            RateOfFire = 0.5, -- 1
+		},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "uca0104", -- Gemini
+    Air = {
+        CombatTurnSpeed = 2, -- 1.5
+        TurnSpeed = 2, -- 1.5
+    },
+    Defense = {
+        Health = 1000, -- 900
+        MaxHealth = 1000,
+        Shield = {
+            ShieldMaxHealth = 100, -- 200
+            ShieldRegenRate = 3, -- 2
+        },
+    },
+    Display = {
+        IdleEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        LayerChangeEffects = {
+            AirLand = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            LandAir = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        MovementEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            BeamExhaust = {
+                Cruise = false,
+                Idle = false,
+                Landed = false,
+            },
+        },
+        UniformScale = 0.018, -- 0.03
+    },
+    Economy = {
+        BuildTime = 20, -- 27
+        EnergyValue = 300, -- 175
+        MassValue = 60, -- 75
+    },
+    General = {
+        ExperienceValue = 125, -- 250
+    },
+    Intel = {
+        RadarRadius = 100, -- 60
+        VisionRadius = 60, -- 32
+    },
+    SelectionSizeX = 0.96, -- 1.6
+    SelectionSizeZ = 1.08, -- 1.8
+    Weapons = {
+        {
+            Damage = 100, -- 50x2
+            MaxRadius = 60, -- 25
+            MuzzleVelocity = 30, -- 20
+            RateOfFire = 0.5, -- 1
+        },
+        {
+            Damage = 250, -- 245
+            DamageRadius = 4, -- 2.5
+            MaxRadius = 40, -- 32
+            MinRadius = 1, -- 5
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "uca0105d1", -- Intellitron
+    Air = {
+        CombatTurnSpeed = 2, -- 1.5
+        MaxAirspeed = 20, -- 22
+        MinAirspeed = 10, -- 8
+        TurnSpeed = 2, -- 1.5
+    },
+    Defense = {
+        Health = 1500, -- 2000
+        MaxHealth = 1500,
+        RegenRate = 4, -- 3
+        Shield = {
+            ShieldMaxHealth = 150, -- 200
+            ShieldRegenRate = 4, -- 2
+        },
+    },
+    Display = {
+        IdleEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        MovementEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            BeamExhaust = {
+                Cruise = false,
+                Idle = false,
+                Landed = false,
+            },
+        },
+        UniformScale = 0.06, -- 0.1
+    },
+    Economy = {
+        BuildTime = 20, -- 32
+        EnergyValue = 250, -- 275
+        MassValue = 50, -- 80
+    },
+    General = {
+        ExperienceValue = 75, -- 150
+    },
+    Intel = {
+        RadarRadius = 200, -- 128
+        RadarStealth = true,
+        SonarRadius = 200, -- 0
+        VisionRadius = 100, -- 64
+    },
+    SelectionSizeX = 0.72, -- 1.2
+    SelectionSizeZ = 0.96, -- 1.6
+    Weapons = {
+        {
+            RateOfFire = 0.15, -- 0.2
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "uca0901", -- Cybran Basic Transport
+    Display = {
+        IdleEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        LayerChangeEffects = {
+            AirLand = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            LandAir = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        MovementEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+            BeamExhaust = {
+                Cruise = false,
+                Idle = false,
+                Landed = false,
+            },
+        },
+        UniformScale = 0.05, -- 0.1
+    },
+    Economy = {
+        BuildTime = 30, -- 35
+        EnergyValue = 750, -- 600
+        MassValue = 150, -- 180
+    },
+    General = {
+        ExperienceValue = 375, -- 750
+    },
+    Navigation = {
+        Radius = 4, -- 8
+    },
+    SelectionSizeX = 1.7, -- 3.4
+    SelectionSizeZ = 4.9, -- 9.8
+    Transport = {
+        StorageRange = 20, -- 10
+    },
+    Weapons = {
+        {
+            Damage = 80, -- 4x3
+            MaxRadius = 25, -- 13
+            RateOfFire = 0.5, -- 3
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0001", -- Cybran Land Factory
+    Build = {
+        BuildScaffoldUnit = 'ucb0022', -- ucb0021
+    },
+    Defense = {
+        RegenRate = 25, -- 18
+        Shield = {
+            ShieldRegenRate = 50, -- 60
+            ShieldSize = 30, -- 25
+        },
+    },
+    Display = {
+        BlinkingLights = {
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLScale = 0,
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 14, -- 22
+                Width = 14, -- 22
+            },
+        },
+		UniformScale = 0.0357, -- 0.05
+	},
+    Economy = {
+        EnergyValue = 750, -- 500
+        MassValue = 300, -- 240
+        ProductionPerSecondEnergy = 2, -- 1
+    },
+    Footprint = {
+        SizeX = 10, -- 14
+        SizeZ = 10,
+    },
+    General = {
+        ExperienceValue = 625, -- 1250
+    },
+	SelectionSizeX = 4.857, -- 6.8
+    SelectionSizeZ = 4.857, -- 6.8
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0002", -- Cybran air Factory
+    Build = {
+        BuildScaffoldUnit = 'ucb0022', -- ucb0021
+    },
+    Defense = {
+        RegenRate = 25, -- 18
+        Shield = {
+            ShieldRegenRate = 50, -- 60
+            ShieldSize = 30, -- 25
+        },
+    },
+    Display = {
+        BlinkingLights = {
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 14, -- 22
+                Width = 14, -- 22
+            },
+        },	
+		UniformScale = 0.0714, -- 0.1
+	},
+    Economy = {
+        EnergyValue = 750, -- 500
+        MassValue = 300, -- 280
+        ProductionPerSecondEnergy = 2, -- 1
+    },
+    Footprint = {
+        SizeX = 10, -- 14
+        SizeZ = 10,
+    },
+    General = {
+        ExperienceValue = 625, -- 1250
+    },
+	SelectionSizeX = 5.857, -- 8.2
+    SelectionSizeZ = 6, -- 8.4
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0003", -- Cybran Naval Productions Facility
+    Build = {
+        BuildScaffoldUnit = 'ucb0021', -- ucb0026
+    },
+    Defense = {
+        RegenRate = 25, -- 18
+        Shield = {
+            ShieldRegenRate = 50, -- 60
+            ShieldSize = 30, -- 25
+        },
+    },
+    Display = {		
+		UniformScale = 0.0227, -- 0.034
+	},
+    Economy = {
+        EnergyValue = 1000, -- 500
+        MassValue = 400, -- 320
+        ProductionPerSecondEnergy = 2, -- 1
+    },
+    Footprint = {
+        SizeX = 12, -- 18
+        SizeZ = 12,
+    },
+    General = {
+        ExperienceValue = 625, -- 1250
+    },
+	SelectionSizeX = 8.3, -- 12.5
+    SelectionSizeZ = 8.3, -- 12.5
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0011", -- Cybran Land Gantry
+    Build = {
+        BuildScaffoldUnit = 'ucb0021', -- ucb0024
+    },
+    Defense = {
+        RegenRate = 25, -- 18
+    },
+    Display = {
+        BlinkingLights = {
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+            {
+                BLOffsetX = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 20, -- 40
+                Width = 20, -- 40
+            },
+        },
+		UniformScale = 0.02666, -- 0.04
+	},
+    Economy = {
+        EnergyValue = 2500, -- 1300
+        MassValue = 500, -- 400
+    },
+    Footprint = {
+        SizeX = 16, -- 24
+        SizeZ = 16,
+    },
+    General = {
+        ExperienceValue = 875, -- 1750
+    },
+	SelectionSizeX = 9, -- 13.5
+    SelectionSizeZ = 9, -- 13.5
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0012", -- Cybran Air Gantry
+    Build = {
+        BuildScaffoldUnit = 'ucb0021', -- ucb0024
+    },
+    Defense = {
+        RegenRate = 25, -- 18
+    },
+    Display = {
+        BlinkingLights = {
+            {
+                BLBone = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0,
+                BLScale = 0,
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 20, -- 40
+                Width = 20, -- 40
+            },
+        },
+		UniformScale = 0.0666, -- 0.1
+	},
+    Economy = {
+        EnergyValue = 2500, -- 1300
+        MassValue = 500, -- 400
+    },
+    Footprint = {
+        SizeX = 16, -- 24
+        SizeZ = 16,
+    },
+    General = {
+        ExperienceValue = 875, -- 1750
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Custom/UCB0011_coststamp.lua',
+    },
+	SelectionSizeX = 10.1333, -- 15.2
+    SelectionSizeZ = 8.6, -- 12.9
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0101", -- Point Defence
+    Defense = {
+        Health = 2000, -- 4000
+        MaxHealth = 2000,
+    },
+    Display = {
+        DisplayName = '<LOC UNIT_NAME_0016>Cerberus',
+    },
+    Economy = {
+        BuildTime = 25, -- 28
+        EnergyValue = 750, -- 420
+        MassValue = 250, -- 190
+    },
+    General = {
+        ExperienceValue = 150, -- 300
+    },
+    Intel = {
+        VisionRadius = 60, -- 28
+    },	
+    Weapons = {
+        {
+            Damage = 600, -- 150
+            DamageRadius = 1.5, -- 0
+            MaxRadius = 66, -- 40
+            MuzzleVelocity = 90, -- 60
+            RateOfFire = 0.5, -- 2
+            TurretPitchRange = 90, -- 55
+            TurretYawRange = 360, -- 180
+        },
+        {},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0102", -- AA
+    Defense = {
+        Health = 2000, -- 3000
+        MaxHealth = 2000,
+        RegenRate = 10, -- 6
+    },
+    Display = {
+        DisplayName = '<LOC UNIT_NAME_0018>Myrmidon',
+    },
+    Economy = {
+        BuildTime = 25, -- 28
+        EnergyValue = 750, -- 560
+        MassValue = 250, -- 225
+    },
+    General = {
+        ExperienceValue = 150, -- 300
+    },
+    Intel = {
+        VisionRadius = 60, -- 24
+    },
+    Weapons = {
+        {
+            Damage = 600, -- 150
+            DamageRadius = 1.5, -- 0
+            MaxRadius = 80, -- 66
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1.5
+        },
+        {},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0105", -- Cybran LRA
+    Defense = {
+        Health = 10000, -- 7000
+        MaxHealth = 10000,
+        RegenRate = 50, -- 24
+    },
+    Display = {
+        DisplayName = '<LOC UNIT_NAME_0020>Trebuchet',
+        Tarmacs = {
+            {
+                Length = 10, -- 12.8
+                Width = 10, -- 12.8
+            },
+        },
+		UniformScale = 0.0675, -- 0.09
+	},
+    Economy = {
+        BuildTime = 150, -- 70
+        EnergyValue = 5000, -- 2750
+        MassValue = 1000, -- 750
+    },
+    Footprint = {
+        SizeX = 6, -- 8
+        SizeZ = 6,
+    },
+    General = {
+        ExperienceValue = 375, -- 750
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Default/Default6x6_coststamp.lua',
+    },
+	SelectionSizeX = 3.975, -- 5.3
+    SelectionSizeZ = 3.3, -- 4.4
+    Weapons = {
+        {
+            Damage = 1000, -- 875
+            FiringRandomness = 0.2, -- 1.2
+            MaxRadius = 1000, -- 500
+            MuzzleVelocity = 75, -- 60
+            ProjectileLifetime = 180, -- 120
+            RateOfFire = 0.1, -- 0.2
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0202", --  Shield
+    Defense = {
+        Health = 2000, -- 1500
+        MaxHealth = 2000,
+        RegenRate = 10, -- 4
+        Shield = {
+            ShieldMaxHealth = 15000, -- 8000
+            ShieldRegenRate = 75, -- 80
+            ShieldSize = 46, -- 42
+        },
+    },
+    Economy = {
+        BuildTime = 25, -- 40
+        EnergyValue = 1500, -- 750
+    },
+    General = {
+        ExperienceValue = 250, -- 500
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0204", -- Nuke and Anti-Nuke and TML
+    Defense = {
+        Health = 10000, -- 12000
+        MaxHealth = 10000,
+        RegenRate = 25, -- 5
+    },
+    Display = {
+        Tarmacs = {
+            {
+                Length = 10, -- 12.8
+                Width = 10, -- 12.8
+            },
+        },
+		UniformScale = 0.039, -- 0.0525
+	},
+    Economy = {
+        BuildTime = 50, -- 180
+        EnergyValue = 2500, -- 3000
+        MassValue = 500, -- 900
+    },
+    Footprint = {
+        SizeX = 6, -- 8
+        SizeZ = 6,
+    },
+    General = {
+        ExperienceValue = 750, -- 1500
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Default/Default6x6_coststamp.lua',
+    },
+	SelectionSizeX = 3, -- 4
+    SelectionSizeZ = 2.7, -- 3.6
+    Weapons = {
+        {
+            MaxRadius = 100, -- 50
+        },
+        {
+            Damage = 500, -- 1000
+            DamageRadius = 2, -- 0
+        },
+        {
+            Ammo = {
+                BuildTime = 150, -- 180
+                EnergyCost = 5000, -- 4000
+                MaxStorage = 3, -- 5
+            },
+        },
+        {
+            Ammo = {
+                BuildTime = 25, -- 60
+                InitialStored = 1, -- 0
+                MassCost = 250, -- 450
+                MaxStorage = 5, -- 10
+            },
+            MaxRadius = 100, -- 50
+            Damage = 3000,
+        },
+        {
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0303", --  Radar station
+    Defense = {
+        Health = 2000, -- 1000
+        MaxHealth = 2000,
+        RegenRate = 10, -- 2
+    },
+    Economy = {
+        BuildTime = 25, -- 30
+        EnergyValue = 500, -- 250
+        MassValue = 200, -- 100
+    },
+    General = {
+        ExperienceValue = 150, -- 300
+    },
+    Intel = {
+        RadarRadius = 250, -- 210
+        SonarRadius = 200, -- 210
+        VisionRadius = 125, -- 20
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0401d1", --  Recycler
+    Defense = {
+        Health = 5000, -- 6000
+        MaxHealth = 5000,
+        RegenRate = 25, -- 14
+    },
+    Display = {
+        Tarmacs = {
+            {
+                Length = 10, -- 12.8
+                Width = 10,
+            },
+        },
+		UniformScale = 0.0376, -- 0.05
+	},
+    Economy = {
+        BuildTime = 100, -- 75
+        EnergyValue = 2500, -- 1750
+    },
+    Footprint = {
+        SizeX = 6, -- 8
+        SizeZ = 6,
+    },
+    General = {
+        ExperienceValue = 750, -- 1500
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Default/Default6x6_coststamp.lua',
+    },
+	SelectionSizeX = 2.55, -- 3.4
+    SelectionSizeZ = 3.375, -- 4.5
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0701", --  Mass Collector
+    Defense = {
+        Health = 2000, -- 2500
+        MaxHealth = 2000,
+    },
+	Display = {
+		UniformScale = 0.168, -- 0.24
+	},
+    Economy = {
+        EnergyValue = 300, -- 250
+        MassValue = 150, -- 100
+        ProductionPerSecondMass = 1, -- 0.6
+    },
+    General = {
+        ExperienceValue = 500, -- 1000
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0702", --  Energy Production
+    Build = {
+        BuildScaffoldUnit = 'ucb0023', -- ucb0022
+    },
+    Defense = {
+        Health = 2000, -- 3000
+        MaxHealth = 2000,
+        RegenRate = 10, -- 3
+    },
+    Display = {
+	    IdleEffects = {
+            Land = {
+                Effects = {
+                    {
+						Scale = 0.6,
+                    },
+                },
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 6, -- 8
+                Width = 6, -- 8
+            },
+        },
+		UniformScale = 0.085, -- 0.13
+	},
+    Economy = {
+        BuildTime = 25, -- 24
+        EnergyValue = 200, -- 100
+        MassValue = 100, -- 70
+        ProductionPerSecondEnergy = 10, -- 6
+    },
+    Footprint = {
+        SizeX = 4,
+        SizeZ = 4,
+    },
+    General = {
+        ExperienceValue = 250, -- 500
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Default/Default4x4_coststamp.lua',
+    },		
+	SelectionSizeX = 2.2,
+    SelectionSizeZ = 2.2,
+    Weapons = {
+        {
+            DamageFriendly = false,
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0704", -- Cybran Mass Convertor
+    Defense = {
+        Health = 2000, -- 2400
+        MaxHealth = 2000,
+        RegenRate = 10, -- 6
+    },
+    Economy = {
+        BuildTime = 25, -- 30
+        EnergyValue = 3000, -- 1500
+        MassValue = 200, -- 50
+        ProductionPerSecondEnergy = -50, -- 0
+        ProductionPerSecondMass = 2, -- 0
+    },
+    General = {
+        ExperienceValue = 375, -- 750
+    },
+    Weapons = {
+        {
+            Damage = 2000, -- 5000
+            DamageFriendly = false,
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucb0801", -- cybran Research Station
+    Abilities = {
+        {
+            Blueprint = 'PowerDetonate',
+        },
+        {
+            Blueprint = 'ConvertResearch',
+        },
+    },
+    Defense = {
+        Health = 3000, -- 6000
+        MaxHealth = 3000,
+        RegenRate = 15, -- 48
+    },
+    Display = {
+        IdleEffects = {
+            Land = {
+                Effects = {
+                    {
+                        Type = 0,
+                    },
+                },
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 10, -- 12.8
+                Width = 10,
+            },
+        },
+        UniformScale = 0.031875, -- 0.0425
+    },
+    Economy = {
+        BuildTime = 25, -- 42
+        EnergyValue = 1000, -- 750
+        MassValue = 300, -- 375
+        ProductionPerSecondResearch = 0.01, -- 0.0125
+    },
+    Footprint = {
+        SizeX = 6, -- 8
+        SizeZ = 6,
+    },
+    General = {
+        ExperienceValue = 1000, -- 2000
+    },
+    Navigation = {
+        CostStamp = '/coststamps/Default/Default6x6_coststamp.lua',
+    },
+	SelectionSizeX = 2.85, -- 3.8
+    SelectionSizeZ = 2.85, -- 3.8
+}
+
+UnitBlueprint {
+	Merge = true,
+	BlueprintId = "ucl0001", -- Cybran ACU
+    Build = {
+        MaxRepairDistance = 25, -- 15
+        RepairScanRadius = 30, -- 20
+    },
+    Defense = {
+        Health = 30000, -- 20000
+        MaxHealth = 30000,
+        RegenRate = 30, -- 24
+    },
+    Display = {
+        UniformScale = 0.08, -- 0.1
+    },
+    Economy = {
+        MaxBuildDistance = 25, -- 15
+        ProductionPerSecondEnergy = 50, -- 5
+        ProductionPerSecondMass = 5, -- 1
+    },
+    General = {
+        ExperienceValue = 3750, -- 7500
+    },
+	Intel = {
+        RadarRadius = 100, -- 60
+        SonarRadius = 100,
+        VisionRadius = 60, -- 30
+        WaterVisionRadius = 60,
+    },
+    Navigation = {
+        Radius = 2.75, -- 3.5
+    },
+    Physics = {
+        MaxSpeed = 3, -- 2.75
+    },
+    SelectionSizeX = 1.44, -- 1.8
+    SelectionSizeZ = 0.96, -- 1.2
+    Weapons = {
+        {
+            Damage = 800, -- 400
+            DamageRadius = 0, -- 0
+            MaxRadius = 40, -- 20
+        },
+        {
+            Damage = 1500, -- 1000
+            DamageRadius = 5, -- 5
+            MaxRadius = 60, -- 20
+        },
+        {
+            Damage = 40, -- 10
+            DamageRadius = 5, -- 5
+            MaxRadius = 60, -- 32
+            RateOfFire = 0.5, -- 1
+        },
+        {},
+        {
+            Damage = 400, -- 75x2
+            DamageRadius = 0, -- 0
+            MaxRadius = 60, -- 32
+            RateOfFire = 0.5, -- 1
+        },
+        {
+            Damage = 300, -- 200x6
+            MaxRadius = 60, -- 50
+            ProjectileLifetime = 35, -- 25
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId = "ucl0002", -- Engineer
+    Defense = {
+        Health = 1500, -- 1800
+        MaxHealth = 1500,
+        RegenRate = 4, -- 2
+    },
+    Display = {
+        UniformScale = 0.06, -- 0.075
+    },
+    Economy = {
+        BuildTime = 15, -- 16
+        EnergyValue = 250, -- 140
+        MassValue = 60, -- 68
+		MaxBuildDistance = 15, -- 10
+    },
+    General = {
+        ExperienceValue = 75, -- 150
+    },
+    Intel = {
+        RadarRadius = 100, -- 90
+        SonarRadius = 100, -- 90
+        VisionRadius = 50, -- 32
+    },
+    Navigation = {
+        Radius = 1.35, -- 1.8
+    },
+    SelectionSizeX = 1.04, -- 1.3
+    SelectionSizeZ = 1.12, -- 1.4
+    Weapons = {
+        {
+            Damage = 150, -- 100
+            MaxRadius = 40, -- 20
+            RateOfFire = 0.5, -- 0.66
+        },
+	{},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucl0102", -- Brackman
+    Defense = {
+        Health = 750, -- 800
+        MaxHealth = 750,
+        Shield = {
+            ShieldMaxHealth = 75, -- 80
+            ShieldRegenRate = 2, -- 1
+        },
+    },
+    Economy = {
+        BuildTime = 15, -- 21
+        EnergyValue = 200, -- 120
+        MassValue = 45, -- 54
+    },
+    General = {
+        ExperienceValue = 100, -- 200
+    },
+    Intel = {
+        VisionRadius = 40, -- 22
+    },
+    Physics = {
+        MaxSpeed = 3, -- 2.8
+    },
+    Weapons = {
+        {
+            MaxRadius = 60, -- 32
+            MuzzleVelocity = 18, -- 15
+            MuzzleVelocityReduceDistance = 50, -- 28
+			ProjectileLifetime = 50, -- 25
+            RateOfFire = 0.1, -- 0.2
+            TargetPriorities = {
+                'MOBILE',
+                'STRUCTURE',
+                'ALLUNITS',
+            },
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucl0103", -- Loyalist
+    Defense = {
+        Health = 1000, -- 1100
+        MaxHealth = 1000,
+        RegenRate = 3, -- 2
+        Shield = {
+            ShieldMaxHealth = 100, -- 110
+            ShieldRegenRate = 3, -- 2
+        },
+    },
+    Economy = {
+        BuildTime = 10, -- 20
+        EnergyValue = 150, -- 100
+        MassValue = 30, -- 40
+    },
+    General = {
+        ExperienceValue = 75, -- 150
+    },
+    Intel = {      
+		VisionRadius = 40, -- 19
+    },
+    Physics = {
+        MaxSpeed = 4.5, -- 4.2
+    },
+    Weapons = {
+        {
+            MaxRadius = 36, -- 18
+        },
+        {
+            Damage = 75, -- 17
+            MaxRadius = 36, -- 18
+            RateOfFire = 0.5, -- 2.25
+            TurretPitchRange = 90, -- 45
+        },
+        {
+            Damage = 75, -- 17
+            MaxRadius = 36, -- 18
+            RateOfFire = 0.5, -- 2.25
+            TurretPitchRange = 90, -- 45
+        },
+        {},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucl0104",  -- Cobra
+    Defense = {
+        Health = 1000, -- 950
+        MaxHealth = 1000,
+        Shield = {
+            ShieldMaxHealth = 100, -- 95
+            ShieldRegenRate = 3, -- 2
+        },
+    },
+    Economy = {
+        BuildTime = 15, -- 19
+        EnergyValue = 200, -- 130
+        MassValue = 45, -- 52
+    },
+    General = {
+        ExperienceValue = 100, -- 200
+    },
+    Intel = {
+        VisionRadius = 40, -- 18
+    },
+    Physics = {
+        MaxSpeed = 3, -- 2.9
+        MaxSpeedReverse = 3, -- 2.9
+    },
+    Weapons = {
+        {
+            DamageRadius = 1, -- 0
+            MaxRadius = 80, -- 50
+            ProjectileLifetime = 45, -- 25
+            TargetPriorities = {
+                'STRUCTURE',
+                'ALLUNITS',
+            },
+        },
+	{},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucl0204", -- Adaptor
+    Defense = {
+        Health = 750, -- 700
+        MaxHealth = 750,
+        Shield = {
+            ShieldMaxHealth = 200, -- 140
+            ShieldRegenRate = 2, -- 1
+            ShieldSize = 30, -- 26
+        },
+    },
+    Economy = {
+        BuildTime = 15, -- 16
+        EnergyValue = 250, -- 160
+        MassValue = 60, -- 70
+    },
+    General = {
+        ExperienceValue = 100, -- 200
+    },
+    Intel = {
+        VisionRadius = 50, -- 20
+    },
+    Physics = {
+        MaxSpeed = 3, -- 2.9
+    },
+    Weapons = {
+        {
+            Damage = 30, -- 15x3
+            MaxRadius = 50, -- 32
+            ProjectileLifetime = 11, -- 7
+            RateOfFire = 0.5, -- 1
+        },
+        {
+            Damage = 30, -- 15x3
+            MaxRadius = 50, -- 32
+            ProjectileLifetime = 11, -- 7
+            RateOfFire = 0.5, -- 1
+        },
+        {
+        },
+        {},
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0001", -- escape pod
+    Display = {
+        UniformScale = 0.08, -- 0.1
+    },
+	Economy = {
+        ProductionPerSecondEnergy = 0,
+        ProductionPerSecondMass = 0,		
+    },
+    General = {
+        ExperienceValue = 3750, -- 7500
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0111", -- Missle Add-On
+    Display = {
+        UniformScale = 0.0425, -- 0.06
+    },
+    Economy = {
+        BuildTime = 10, -- 13
+        EnergyValue = 250, -- 125
+        MassValue = 100, -- 75
+    },
+    Weapons = {
+        {
+            Damage = 200, -- 220x6
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0121", -- AA add-on
+    Display = {
+        UniformScale = 0.0425, -- 0.06
+    },
+    Economy = {
+        BuildTime = 10, -- 11
+        EnergyValue = 200, -- 165
+        MassValue = 100, -- 80
+    },
+    Weapons = {
+        {
+            Damage = 40, -- 18x6
+            MaxRadius = 60, -- 44
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0131", -- Cybran Factory Torpedo Upgrade
+    Economy = {
+        EnergyValue = 250, -- 150
+        MassValue = 100, -- 75
+    },
+    Weapons = {
+        {
+            RateOfFire = 0.5, -- 0.25
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0141", -- Cybran Factory intel Upgrade
+    Display = {
+        UniformScale = 0.02, -- 0.03
+    },
+    Economy = {
+        BuildTime = 10, -- 9
+        EnergyValue = 250, -- 90
+        MassValue = 100, -- 35
+    },
+    Intel = {
+        RadarRadius = 200, -- 150
+        SonarRadius = 200, -- 150
+        VisionRadius = 100, -- 75
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucm0211", -- Cybran Factory shield Upgrade
+    Display = {
+        UniformScale = 0.0285, -- 0.04
+    },
+    Economy = {
+        BuildTime = 10, -- 14
+        EnergyValue = 500, -- 250
+        MassValue = 200, -- 125
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucs0103", -- Salem Class Destroyer
+    Display = {
+        UniformScale = 0.054, -- 0.09
+    },
+    Economy = {
+        BuildTime = 50, -- 45
+        EnergyValue = 1000, -- 650
+        MassValue = 250, -- 240
+    },
+    General = {
+        ExperienceValue = 375, -- 750
+    },
+    Intel = {
+        RadarRadius = 80, -- 45
+        SonarRadius = 80, -- 45
+        VisionRadius = 40, -- 32
+        WaterVisionRadius = 40, -- 45
+    },
+    Navigation = {
+        Radius = 2.5, -- 4.35
+    },
+    Physics = {
+        MaxSpeed = 4, -- 5
+        MaxSpeedReverse = 4, -- 5
+    },
+    SelectionSizeX = 0.72, -- 1.2
+    SelectionSizeZ = 3.24, -- 5.4
+    Weapons = {
+        {
+            Damage = 150, -- 110x3
+            RateOfFire = 0.4, -- 0.6
+        },
+        {
+            Damage = 60, -- 25x3
+            MaxRadius = 40, -- 32
+            RateOfFire = 0.5, -- 1
+        },
+        {
+            MaxRadius = 40, -- 32
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucs0105", -- Executioner Class Battlecruiser
+    Display = {
+        UniformScale = 0.06, -- 0.11
+    },
+    Economy = {
+        BuildTime = 100, -- 55
+        EnergyValue = 2500, -- 1500
+        MassValue = 500, -- 450
+    },
+    General = {
+        ExperienceValue = 750, -- 1500
+    },
+    Intel = {
+        RadarRadius = 100, -- 75
+        SonarRadius = 100, -- 75
+        WaterVisionRadius = 50, -- 75
+    },
+    Navigation = {
+        Radius = 3.5, -- 6.5
+    },
+    Physics = {
+        MaxSpeed = 3.5, -- 4
+        MaxSpeedReverse = 3.5, -- 5
+    },
+    SelectionSizeX = 0.87, -- 1.45
+    SelectionSizeZ = 4.8, -- 8
+    Weapons = {
+        {
+            Damage = 125, -- 75x3
+            DamageRadius = 3, -- 2
+            MaxRadius = 100, -- 90
+            RateOfFire = 0.2, -- 0.3
+        },
+        {
+            Damage = 125, -- 75x3
+            DamageRadius = 3, -- 2
+            MaxRadius = 100, -- 90
+            RateOfFire = 0.2, -- 0.3
+        },
+        {
+            Damage = 125, -- 75x3
+            DamageRadius = 3, -- 2
+            MaxRadius = 100, -- 90
+            RateOfFire = 0.2, -- 0.3
+        },
+        {
+            Damage = 40, -- 15x3
+            MaxRadius = 40, -- 32
+            RateOfFire = 0.5, -- 1.2
+        },
+        {
+            Damage = 40, -- 15x3
+            MaxRadius = 40, -- 32
+            RateOfFire = 0.5, -- 1.2
+        },
+        {
+            Damage = 100, -- 50
+            MaxRadius = 40, -- 32
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucs0901", -- Command Class Aircraft Carrier
+    Defense = {
+        Health = 10000, -- 7000
+        MaxHealth = 10000,
+        RegenRate = 25, -- 16
+    },
+    Display = {
+        UniformScale = 0.0405, -- 0.0675
+    },
+    Economy = {
+        BuildEnergyCostMultiplier = 0.85,
+        BuildMassCostMultiplier = 0.85,
+        BuildTime = 100, -- 60
+        EnergyValue = 2500, -- 900
+        MassValue = 500, -- 400
+    },
+    General = {
+        ExperienceValue = 375, -- 750
+    },
+    Intel = {
+        RadarRadius = 100,
+        SonarRadius = 100,
+        VisionRadius = 50,
+        WaterVisionRadius = 50,
+    },
+    Navigation = {
+        Radius = 4, -- 7.5
+    },
+    SelectionSizeX = 1.65, -- 2.75
+    SelectionSizeZ = 5.4, -- 9
+    Transport = {
+        StorageSize = 40,
+        StorageSlots = 40,
+    },
+    Weapons = {
+        {
+            Damage = 250, -- 150
+            DamageRadius = 3, -- 0
+            LeadTarget = false,
+            MaxRadius = 60, -- 50
+            MuzzleVelocity = 36, -- 18.5
+        },
+        {
+            Damage = 250, -- 150
+            DamageRadius = 3, -- 0
+            LeadTarget = false,
+            MaxRadius = 60,
+            MuzzleVelocity = 36, -- 18.5
+        },
+        {
+            Damage = 250, -- 150
+            DamageRadius = 3, -- 0
+            LeadTarget = false,
+            MaxRadius = 60,
+            MuzzleVelocity = 36, -- 18.5
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0101", -- Megalith
+    Defense = {
+        Health = 10000, -- 9350
+        MaxHealth = 10000,
+        RegenRate = 25, -- 26
+    },
+    Display = {
+        UniformScale = 0.06, -- 0.1
+    },
+    Economy = {
+        BuildTime = 100, -- 115
+        EnergyValue = 2500, -- 2300
+        MassValue = 500, -- 525
+    },
+    General = {
+        BuildIconSortPriority = 10, -- 30
+        ExperienceValue = 750, -- 1500
+    },
+    Intel = {
+        VisionRadius = 80, -- 64
+        WaterVisionRadius = 80, -- 64
+    },
+    Navigation = {
+        Radius = 2.5, -- 4.8
+        RepulseRadius = 0, -- 6
+    },
+    SelectionSizeX = 2.7, -- 4.5
+    SelectionSizeZ = 1.86, -- 3.1
+    Weapons = {
+        {
+            Damage = 600, -- 400
+            MaxRadius = 80, -- 64
+            RateOfFire = 0.5, -- 0.75
+        },
+        {
+            ContinuousBeam = true,
+            Damage = 15, -- 14
+            DamageRadius = 1.5, -- 0
+            MaxRadius = 80, -- 64
+        },
+        {
+            ContinuousBeam = true,
+            Damage = 15, -- 14
+            DamageRadius = 1.5, -- 0
+            MaxRadius = 80, -- 64
+        },
+        {
+            Damage = 50, -- 15
+            MaxRadius = 40, -- 32
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1.5
+            TurretYawRange = 360, -- 180
+        },
+        {
+            Damage = 50, -- 15
+            MaxRadius = 40, -- 32
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1.5
+            TurretYawRange = 360, -- 180
+        },
+        {
+            Damage = 50, -- 15
+            MaxRadius = 40, -- 32
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1.5
+            TurretYawRange = 360, -- 180
+        },
+        {
+            Damage = 50, -- 15
+            MaxRadius = 40, -- 32
+            MuzzleVelocity = 90, -- 45
+            RateOfFire = 0.5, -- 1.5
+            TurretYawRange = 360, -- 180
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0102", -- Giant Transport
+    Defense = {
+        Health = 20000, -- 9000
+        MaxHealth = 20000,
+        RegenRate = 50, -- 48
+    },
+    Display = {
+        DisplayName = '<LOC UNIT_NAME_0066>Behemoth',
+        IdleEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = '0',
+                    },
+                },
+            },
+        },
+        MovementEffects = {
+            Air = {
+                Effects = {
+                    {
+                        Type = '0',
+                    },
+                },
+            },
+            BeamExhaust = {
+                Cruise = false,
+                Idle = false,
+                Landed = false,
+            },
+        },
+        UniformScale = 0.028, -- 0.04
+    },
+    Economy = {
+        BuildTime = 150, -- 115
+        EnergyValue = 5000, -- 2360
+        MassValue = 1000, -- 475
+    },
+    General = {
+        ExperienceValue = 750, -- 1500
+    },
+    Intel = {
+        RadarStealth = true,
+    },
+    Navigation = {
+        Radius = 4, -- 8
+    },
+    SelectionSizeX = 6.23, -- 8.9
+    SelectionSizeZ = 4.2, -- 6
+    Transport = {
+        StorageRange = 30, -- 10
+    },
+    Weapons = {
+        {
+            Damage = 100, -- 125
+            MaxRadius = 40, -- 20
+            ProjectilesPerOnFire = 3, -- 4 should have been 3
+        },
+        {
+            Damage = 100, -- 125x3
+            MaxRadius = 40, -- 20
+        },
+        {
+            Damage = 100, -- 7x3
+            MaxRadius = 40, -- 25
+            RateOfFire = 0.5, -- 1
+        },
+        {
+            Damage = 100, -- 7x3
+            MaxRadius = 40, -- 25
+            RateOfFire = 0.5, -- 1
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0103", -- Bomb Bouncer
+    Defense = {
+        Health = 20000, -- 26500
+        MaxHealth = 20000,
+        RegenRate = 75, -- 71
+        Shield = {
+            CollisionOffsetY = 2, -- 4
+            ShieldMaxHealth = 20000, -- 12000
+            ShieldRechargeTime = 30, -- 20
+            ShieldRegenRate = 100, -- 80
+        },
+    },
+    Display = {
+        UniformScale = 0.08, -- 0.1
+    },
+    Economy = {
+        BuildTime = 150, -- 115
+        EnergyValue = 5000, -- 2375
+        MassValue = 1000, -- 475
+    },
+    General = {
+        BuildIconSortPriority = 30, -- 10
+        ExperienceValue = 750, -- 1500
+    },
+    Navigation = {
+        Radius = 3.5, -- 4.85
+    },
+    Physics = {
+        MaxSpeed = 3, -- 3.1
+    },
+    SelectionSizeX = 2.88, -- 3.6
+    SelectionSizeZ = 2.48, -- 3.1
+    Weapons = {
+        {
+            MaxRadius = 30, -- 20
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0111", -- CRex
+    Defense = {
+        Health = 50000, -- 60000
+        MaxHealth = 50000,
+        RegenRate = 100, -- 119
+    },
+    Display = {
+        UniformScale = 0.08, -- 0.1
+    },
+    Economy = {
+        BuildTime = 250, -- 190
+        MassValue = 2000, -- 1525
+        EnergyValue = 10000, -- 4900
+    },
+    General = {
+        BuildIconSortPriority = 70, -- 40
+        ExperienceValue = 1500, -- 3000
+    },
+    Intel = {
+        RadarStealth = true,
+        VisionRadius = 60, -- 75
+        WaterVisionRadius = 60, -- 75
+    },
+    Navigation = {
+        Radius = 5, -- 6.25
+    },
+    Physics = {
+        MaxSpeed = 4, -- 3.7
+    },
+    SelectionSizeX = 2.88, -- 3.6
+    SelectionSizeZ = 5.76, -- 7.2
+    Weapons = {
+        {
+            Damage = 320, -- 220
+            DamageRadius = 6, -- 3
+            MaxRadius = 60, -- 32
+        },
+        {
+            Damage = 100, -- 85
+        },
+        {
+            Damage = 250, -- 220x6
+            MaxRadius = 60, -- 50
+            ProjectileLifetime = 30, -- 25
+        },
+        {
+            Damage = 250,
+            MaxRadius = 60, -- 50
+            ProjectileLifetime = 30, -- 25
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0112", -- Soul Ripper II
+    Air = {
+        MaxAirspeed = 9, -- 6.5
+        MinAirspeed = 4.5, -- 3
+    },
+    Categories = {
+        'PRODUCTSC2',
+        'SELECTABLE',
+        'CYBRAN',
+        'MOBILE',
+        'AIR',
+        'TECH1',
+        'GROUNDATTACK',
+        'ANTIAIR',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SHOWATTACKRETICLE',
+        'OVERLAYRADAR',
+        'OVERLAYANTIAIR',
+        'OVERLAYDIRECTFIRE',
+        'CANNOTUSEAIRSTAGING',
+        'SOULRIPPERII',
+        'AIRGANTRYBUILDER',
+        'EXPERIMENTAL',
+        'ANTISURFACE',
+        'AIRSTAGINGPLATFORM',
+        'CARRIER',
+        'FACTORY',
+        'PARALLELBUILDER',
+        'SHOWQUEUE',
+        'SORTCONSTRUCTION',
+    },
+    Defense = {
+        Health = 25000, -- 16500
+        MaxHealth = 25000,
+        RegenRate = 75, -- 83
+    },
+    Economy = {
+        BuildEnergyCostMultiplier = 0.9,
+        BuildMassCostMultiplier = 0.9,
+        BuildRate = 1.5,
+        BuildTime = 200, -- 190
+        BuildableCategory = {
+            'BUILTBYFACTORY CYBRAN AIR TECH1 -uca0901',
+        },
+        EnergyValue = 7500, -- 5625
+        MassValue = 1500, -- 1200
+    },
+    General = {
+        CommandCaps = {
+            RULEUCC_Attack = true,
+            RULEUCC_Dock = true,
+            RULEUCC_Guard = true,
+            RULEUCC_Move = true,
+            RULEUCC_Patrol = true,
+            RULEUCC_Pause = true,
+            RULEUCC_RetaliateToggle = true,
+            RULEUCC_Stop = true,
+            RULEUCC_Transport = true,
+        },
+        ConstructionBar = true,
+        ExperienceValue = 1500, -- 6000
+        OrderOverrides = {
+            RULEUCC_Transport = {
+                bitmapId = 'deploy',
+                helpText = 'deploy',
+            },
+        },
+    },
+    Intel = {
+        RadarStealth = true,
+    },
+    Transport = {
+        AirClass = true,
+        LandingBones = {
+            'ucx0112',
+        },
+        LaunchingBones = {
+            'ucx0112',
+        },
+        StorageSlots = 25,
+        TeleportTime = 1,
+    },
+    Weapons = {
+        {
+            Damage = 100, -- 115x3
+            DamageRadius = 4, -- 0
+            MaxRadius = 40, -- 20
+            RateOfFire = 0.5, -- 1
+            TurretYawRange = 180, -- 360
+        },
+        {
+            Damage = 100, -- 115x3
+            DamageRadius = 4, -- 0
+            MaxRadius = 40, -- 20
+            RateOfFire = 0.5, -- 1
+            TurretYawRange = 180, -- 360
+        },
+        {
+            Damage = 100, -- 115x3
+            DamageRadius = 4, -- 0
+            MaxRadius = 40, -- 20
+            RateOfFire = 0.5, -- 1
+            TurretYawRange = 180, -- 360
+        },
+        {
+            Damage = 150, -- 25
+            MaxRadius = 40, -- 20
+            RateOfFire = 1, -- 3
+        },
+        {
+            Damage = 150, -- 25
+            MaxRadius = 40, -- 20
+            RateOfFire = 1, -- 3
+        },
+        {
+            Damage = 150, -- 25
+            MaxRadius = 40, -- 20
+            RateOfFire = 1, -- 3
+        },
+        {
+            Damage = 300, -- 80
+            MaxRadius = 40, -- 25
+            RateOfFire = 0.5, -- 2
+        },
+        {
+            Damage = 300, -- 80
+            MaxRadius = 40, -- 25
+            RateOfFire = 0.5, -- 2
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0113", -- Kraken
+    Defense = {
+        RegenRate = 150, -- 71
+    },
+    Economy = {
+        BuildTime = 250, -- 190
+        EnergyValue = 10000, -- 3350
+        MassValue = 2000, -- 910
+    },
+    General = {
+        ExperienceValue = 2500, -- 4500
+    },
+    Intel = {
+        RadarRadius = 100, -- 0
+        SonarRadius = 100, -- 60
+        VisionRadius = 50, -- 32
+        WaterVisionRadius = 50, -- 32
+    },
+    Weapons = {
+        {
+            MaxRadius = 48, -- 32
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 57, -- 38
+        },
+        {
+            MaxRadius = 48, -- 32
+            MaximumBeamLength = 48, -- 38
+        },
+        {
+            Damage = 400, -- 200x2
+            MaxRadius = 48, -- 32
+            RateOfFire = 0.5, -- 0.25
+        },
+        {
+            Damage = 400, -- 200x2
+            MaxRadius = 48,
+            RateOfFire = 0.5, -- 0.25
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0114", -- magnetron
+    Build = {
+        BuildScaffoldUnit = 'ucb0022', -- ucb0021
+    },
+    Defense = {
+        Health = 15000, -- 16500
+        MaxHealth = 15000,
+        RegenRate = 75, -- 60
+    },
+    Display = {
+        IdleEffects = {
+            Land = {
+                Effects = {
+                    {
+                        Type = '0',
+                    },
+                },
+            },
+        },
+        Tarmacs = {
+            {
+                Length = 10, -- 12.8
+                Width = 10,
+            },
+        },
+		UniformScale = 0.65625, -- 1.05
+	},
+    Economy = {
+        BuildTime = 200, -- 190
+        EnergyValue = 7500, -- 4000
+        MassValue = 1500, -- 1140
+    },
+    Footprint = {
+        SizeX = 10, -- 16
+        SizeZ = 10,
+    },
+    General = {
+        ExperienceValue = 2500, -- 4500
+    },
+	SelectionSizeX = 6.125, -- 9.8
+    SelectionSizeZ = 4.5, -- 7.2
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0115", -- Protobrain Base
+    Abilities = {
+        {
+            Blueprint = 'ConvertResearch',
+        },
+    },
+    Build = {
+        BuildScaffoldUnit = 'ucb0022', -- ucb0021
+    },
+    Defense = {
+        Health = 20000, -- 13500
+        MaxHealth = 20000,
+        RegenRate = 100, -- 48
+        Shield = {
+            AllowPenetration = true,
+            CollisionOffsetY = -1.25,
+            CollisionShape = 'Sphere',
+            ImpactEffects = 'ShieldHit01',
+            Mesh = '/meshes/Shield/Shield02_mesh',
+            PanelArray = {
+                Panel_1 = '/meshes/Shield/ShieldDomeSection03_mesh',
+                Panel_2 = '/meshes/Shield/ShieldDomeSection04_mesh',
+            },
+            ShieldDamageAbsorb = 0.85,
+            ShieldMaxHealth = 50000,
+            ShieldRechargeTime = 100,
+            ShieldRegenRate = 125,
+            ShieldSize = 100,
+            ShieldType = 'Panel',
+        },
+    },
+    Display = {
+        Tarmacs = {
+            {
+                Length = 10.5, -- 12.8
+                Width = 10,
+            },
+        },
+		UniformScale = 0.16, -- 0.23
+	},
+    Economy = {
+        BuildTime = 250, -- 190
+        EnergyValue = 10000, -- 3375
+        MassValue = 2000, -- 1000
+        ProductionPerSecondEnergy = 40, -- 0
+        ProductionPerSecondResearch = 0.01, -- 0.04
+    },
+    Footprint = {
+        SizeX = 10, -- 14
+        SizeZ = 10,
+    },
+    General = {
+        ExperienceValue = 2500, -- 4500
+    },
+	SelectionSizeX = 7, -- 9.8
+    SelectionSizeZ = 5.425, -- 7.6
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0116", -- Proto brain gunship
+    Air = {
+        MaxAirspeed = 9, -- 6.5
+    },
+    Defense = {
+        Health = 10000, -- 13500
+        MaxHealth = 10000,
+        RegenRate = 25, -- 12
+    },
+    Display = {
+        UniformScale = 0.16, -- 0.23
+    },
+    General = {
+        ExperienceValue = 750, -- 1000
+    },
+    Navigation = {
+        Radius = 3, -- 4.5
+    },
+    SelectionSizeX = 2.5, -- 3.5
+    SelectionSizeZ = 3.15, -- 4.4
+    Weapons = {
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+            Damage = 8, -- 7
+            MaxRadius = 20, -- 10
+            TurretYawRange = 360,
+        },
+        {
+        },
+    },
+}
+
+UnitBlueprint {
+   Merge = true,
+   BlueprintId = "ucx0117d1", -- Monkeylord
+    Defense = {
+        Health = 100000, -- 100000
+        MaxHealth = 100000,
+		RegenRate = 190, -- 190
+    },
+    Display = {
+        UniformScale = 0.1, -- 0.2
+    },
+    Economy = {
+        BuildTime = 300, -- 300
+        EnergyValue = 15000, -- 15000
+        MassValue = 3000, -- 3000
+    },
+    General = {
+        BuildIconSortPriority = 40,
+        ExperienceValue = 5000, -- 5000
+    },
+    Intel = {
+        RadarStealth = true,
+        VisionRadius = 100, -- 64
+        WaterVisionRadius = 100, -- 64
+    },
+    Navigation = {
+        Radius = 4, -- 12.75
+        RepulseRadius = 0,
+    },
+    Physics = {
+        MaxSpeed = 2.5, -- 2.6
+    },
+    SelectionSizeX = 3, -- 6
+    SelectionSizeZ = 3.5, -- 7
+    Weapons = {
+        {
+            Damage = 250, -- 250
+            MaxRadius = 100, -- 55
+        },
+        {
+            Damage = 150, -- 150
+            DamageRadius = 0, -- 0
+            MaxRadius = 100, -- 55
+            RateOfFire = 1.5, -- 1.5
+        },
+        {
+            Damage = 150, -- 150
+            DamageRadius = 0, -- 0
+            MaxRadius = 100, -- 55
+            RateOfFire = 1.5, -- 1.5
+        },
+        {
+            Damage = 30, -- 30
+            MaxRadius = 50, -- 32
+            RateOfFire = 1, -- 1
+            TurretYawRange = 360, -- 180 
+        },
+        {
+            Damage = 30, -- 30
+            MaxRadius = 50, -- 32
+            RateOfFire = 1, -- 1
+            TurretYawRange = 360, -- 180
+        },
+        {
+            Damage = 30, -- 30
+            MaxRadius = 50, -- 32
+            RateOfFire = 1, -- 1
+            TurretYawRange = 360, -- 180
+        },
+        {
+            Damage = 30, -- 30
+            MaxRadius = 50, -- 32
+            RateOfFire = 1, -- 1
+            TurretYawRange = 360, -- 180
+        },
+    },
+}

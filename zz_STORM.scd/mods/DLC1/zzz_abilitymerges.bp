@@ -1,0 +1,123 @@
+AbilityBlueprint {
+  Merge = true,
+  BlueprintId = 'convertresearch',
+	ActivationRetriggerDelay = 1,
+    DisplayName = '<LOC SC2_ABILITIES_0097>Convert 1 Research to 2500 Energy',
+    Cooldown = 5, -- 20
+    Resource = {
+        OnActivate = {
+			SourceType = 'Research',
+            SourceAmount = 1,
+            TargetType = 'Energy',
+            TargetAmount = 2500,
+        },
+    },
+}
+
+AbilityBlueprint {
+   Merge = true,
+   BlueprintId = 'convertenergy',
+    DisplayName = '<LOC SC2_ABILITIES_0040>Convert 5000 Energy to 200 Mass',
+    Resource = {
+        OnActivate = {
+            SourceAmount = 5000,
+            TargetAmount = 200, -- 125
+        },
+    },
+}
+
+AbilityBlueprint {
+    BlueprintId = 'overcharge',
+    Merge = true,
+    Resource = {
+        OnActivate = {
+            SourceAmount = 5000,
+        },
+    },
+}
+
+AbilityBlueprint {
+   Merge = true,
+   BlueprintId = 'magnet',
+    Resource = {
+        OnActivate = {
+            SourceAmount = 2500, -- 500
+        },
+    },
+}
+
+AbilityBlueprint {
+   Merge = true,
+   BlueprintId = 'magnetpush',
+    Resource = {
+        OnActivate = {
+            SourceAmount = 2500,
+        },
+   },
+}
+
+AbilityBlueprint {
+   BlueprintId = 'bombbouncercharge',
+   Merge = true,
+    Cooldown = 15, -- 10
+    Resource = {
+        OnActivate = {
+            SourceAmount = 3000, -- 500
+        },
+    },
+}
+
+AbilityBlueprint {
+   BlueprintId = 'bombbouncermegablast',
+   Merge = true,
+    Cooldown = 15, -- 0
+}
+
+AbilityBlueprint {
+   BlueprintId = 'triarmorhalfspeed',
+   Merge = true,
+    Effects = {
+		OnActivate = {
+			{
+				Emitters = {
+					'0',
+				},
+			},
+		},
+	},
+}
+
+AbilityBlueprint {
+   BlueprintId = 'speedoverdrive',
+   Merge = true,
+    Effects = {
+		OnActivate = {
+			{
+				Emitters = {
+					'0',
+					'0',
+				},
+			},
+		},
+	},
+}
+
+AbilityBlueprint {
+   BlueprintId = 'roguenanites',
+   Merge = true,
+	Resource = {
+		OnActivate = {
+			SourceAmount = 2500,
+		},
+	},
+}
+
+AbilityBlueprint {
+   BlueprintId = 'radaroverdrivexp',
+   Merge = true,
+	Resource = {
+		OnActivate = {
+			SourceAmount = 5000, -- 3000
+		},
+	},
+}

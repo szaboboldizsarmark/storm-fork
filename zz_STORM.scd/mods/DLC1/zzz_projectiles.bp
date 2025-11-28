@@ -1,0 +1,7 @@
+ProjectileBlueprint {
+   Merge = true,
+   Source = "/projectiles/Illuminate/ITacticalMissile02/ITacticalMissile02_proj.bp", -- aeon tml wayfinder buhbledow
+    Physics = {
+        MaxSpeed = 36, -- 12
+    },
+}
